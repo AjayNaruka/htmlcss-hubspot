@@ -1,0 +1,137 @@
+/*
+1200PX min width 
+NAV BAR FIXED
+link footer hover
+trasparenza bottoni
+font: montserrat
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.clearfix::after{
+  display: table;
+  content: '';
+  clear: both;
+}
+
+.width{
+  width: 80%;
+  margin: auto;
+}
+
+.min-width{
+  min-width: 1200px;
+}
+
+.float-left{
+  float: left;
+}
+
+/* --------------------- */
+
+header{
+  height: 923px;
+}
+.logo-nav{
+  height: 65px;
+  background-color: red;
+}
+
+.logo-nav .logo{
+  position: relative;
+  width: 50%;
+  height:65px;
+  background-color: gray;
+}
+
+.logo-nav .logo img{
+  position: absolute;
+  width: 85px;
+  left:0;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+.logo-nav .nav{
+  width: 50%;
+  height: 65px;
+  line-height: 65px;
+  background-color: blue;
+  text-align: right;
+}
+
+.logo-nav .nav ul li{
+  display: inline;
+  text-transform: capitalize;
+  margin-right: 20px;
+}
+.logo-nav .nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+/* .logo-nav .nav ul li a::after{
+  font-family: 'Font Awesome 5';
+  content: '<i class="fas fa-angle-down"></i>';
+  margin-left: 10px;
+} */
+
+.logo-nav .nav ul li span{
+  margin-left: 10px;
+}
+
+
+/* BANNER */
+.banner{
+  position: relative;
+  width: 100%;
+  height:100%;
+  background-image: url(../img/jumbotron.png);
+  background-size: 1900px;
+  min-width: 1700px;
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+}
+
+.banner .banner-text{
+  position: absolute;
+  width: 30%;
+  height:50%;
+  top: 18%;
+  left: 5%;
+  font-size: 2vh
+}
+.banner .banner-text h2{
+  font-size: 50px;
+}
+.banner .banner-text p{
+  line-height: 25px;
+  margin-bottom: 25px;
+  margin-top: 50px;
+}
+.banner .banner-text p:last-child{
+  font-size: 75%;
+}
+
+.btn{
+  background-color: #FE795C;
+  width: fit-content;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 5px;
+  padding: 0% 4%;
+}
+
+.btn a{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+}
