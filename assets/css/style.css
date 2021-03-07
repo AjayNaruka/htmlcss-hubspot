@@ -34,11 +34,14 @@ body{
 .float-left{
   float: left;
 }
+.col-logo img{
+  width: 40%;
+}
 
 /* --------------------- */
 
 header{
-  height: 923px;
+  height: 868px;
 }
 .logo-nav{
   height: 65px;
@@ -89,26 +92,26 @@ header{
 
 /* BANNER */
 .banner{
-  position: relative;
-  width: 100%;
-  height:100%;
+  height:800px;
   background-image: url(../img/jumbotron.png);
+  background-color: #FFF3EE;
   background-size: 1900px;
-  min-width: 1700px;
   background-repeat: no-repeat;
   background-position: 100% 0%;
+  border-bottom: 5px solid black;
 }
 
 .banner .banner-text{
-  position: absolute;
-  width: 30%;
+  padding-top: 50px;
+  padding-right: 40%;
   height:50%;
   top: 18%;
-  left: 5%;
+  left: 0%;
   font-size: 2vh
 }
 .banner .banner-text h2{
   font-size: 50px;
+  color: #33475B;
 }
 .banner .banner-text p{
   line-height: 25px;
@@ -135,3 +138,145 @@ header{
   text-decoration: none;
   color: white;
 }
+
+.divisore{
+  height: 65px;
+  width: 100%;
+  background-color: aquamarine;
+  border-bottom: 5px solid black;
+}
+
+/* CUBES SECTION */
+
+.cubes{
+  margin-top: 100px;
+  text-align: center;
+}
+
+.cube-header img{
+  width: 20%;
+}
+.cube-header-text{
+  width: 60%;
+  margin: auto;
+  line-height: 80px;
+  margin-bottom: 50px;
+  
+}
+.cube-header-text h2{
+  color: #33475B;
+}
+.cube-header-text p{
+  line-height: 30px;
+}
+
+.free-crm{
+
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+  padding: 2%;
+}
+
+.book{
+  width: 30%;
+
+}
+
+.book .btn{
+  margin: 20px auto;
+}
+.feature{
+  width:70%;
+  text-align:left;  
+}
+
+.titles{
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.feature p{
+  margin: 10px 0;
+}
+.feature .popular-linea{
+  margin: 50px 0;
+  line-height: 2px;
+}
+.feature .popular{
+  width: 30%; 
+}
+.feature .linea{
+  position: relative;
+  width: 70%;
+  height: 5px;
+}
+.feature .linea::after{
+  background-color: black;
+  bottom: 5px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+  width: 80%;
+}
+.free-crm ul{
+  text-align: left;
+  list-style: none;
+  padding-inline-start: 0;
+}
+.free-crm ul li{
+  display: inline;
+  margin: 0% 5%;
+  text-decoration: none;
+}
+.free-crm ul li i{
+  color: orange;
+}
+.hubs{
+  margin-top: 50px;
+}
+
+.col-3{
+  width: 30%;
+  background-color: yellow;
+  margin-right: 1%;
+}
+.col-container{
+  width: 90%;
+  margin: auto;
+}
+
+.hubs .col-logo img{
+  width: 30%;
+}
+.hubs .col-description{
+  position: relative;
+  padding: 0% 6%;
+  line-height: 30px;
+  margin-top: 20px;
+  padding-bottom: 70px;
+}
+.hubs .col-description::after{
+  background-color: red;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+  width: 90%;
+}
+.col-bottom h4{
+  margin-top: 30px;
+}
+.col-bottom ul{
+  text-align: left;
+  list-style: none;
+
+  line-height: 30px;
+}
+
+
