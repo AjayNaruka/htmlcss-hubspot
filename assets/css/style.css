@@ -94,8 +94,8 @@ header{
   margin-right: 20px;
 }
 .fixed-bar .btn{
-  height: 50px;
-  line-height: 50px;
+  height: 40px;
+  line-height: 40px;
   padding: 0% 2%;
 }
 .btn.login{
@@ -108,14 +108,12 @@ header{
 .logo-nav{
   margin-top: 65px;
   height: 65px;
-  background-color: red;
 }
 
 .logo-nav .logo{
   position: relative;
   width: 50%;
   height:65px;
-  background-color: gray;
 }
 
 .logo-nav .logo img{
@@ -129,7 +127,7 @@ header{
   width: 50%;
   height: 65px;
   line-height: 65px;
-  background-color: blue;
+
   text-align: right;
 }
 
@@ -140,7 +138,8 @@ header{
 }
 .logo-nav .nav ul li a{
   text-decoration: none;
-  color: white;
+  color: #33475B;
+  font-weight: 600;
 }
 /* .logo-nav .nav ul li a::after{
   font-family: 'Font Awesome 5';
@@ -215,7 +214,8 @@ main{
 /* CUBES SECTION */
 
 .cubes{
-  margin-top: 100px;
+  margin-top: 65px;
+  padding-top: 40px;
   text-align: center;
 }
 
@@ -245,11 +245,10 @@ main{
 
 .book{
   width: 30%;
-
 }
 
 .book .btn{
-  margin: 20px auto;
+  margin: 20px 0;
 }
 .feature{
   width:70%;
@@ -294,11 +293,12 @@ main{
 }
 .free-crm ul li{
   display: inline;
-  margin: 0% 5%;
+  margin-right: 40px;
   text-decoration: none;
 }
-.free-crm ul li i{
-  color: orange;
+.cubes i{
+  color: #FE795C;
+  margin-right: 10px;
 }
 .hubs{
   margin-top: 50px;
@@ -307,8 +307,6 @@ main{
 
 .col-3{
   width: 30%;
-  background-color: yellow;
-  
 }
 .col-container{
   width: 90%;
@@ -330,11 +328,11 @@ main{
   padding-bottom: 70px;
 }
 .hubs .col-description::after{
-  background-color: red;
+  background-color: gray;
   bottom: 0;
   content: "";
   display: block;
-  height: 1px;
+  height: 2px;
   left: 50%;
   position: absolute;
   transform: translate(-50%, 0);
@@ -353,10 +351,9 @@ main{
   margin: 0 5%;
 }
 .hubs .btn{
-  margin-left: 50%;
-  transform: translate(-50%,0);
   margin-top: 50px;
   margin-bottom: 20px;
+  padding: 0 30px;
 }
 .hubs ul span{
   margin-right: 10px;
@@ -431,20 +428,22 @@ main{
 .businesses .business-logo{
   width: 70%;
   height: 200px;
-  padding: 3%;
+  padding-left:25%;
   margin-top: 50px;
 }
 .businesses .row-logo{
   height: 50%;
+  
 }
 .businesses .row-logo-img{
   position: relative;
-  width: 25%;
+  width: 15%;
   height: 100%;
+  margin-right: 10%;
 }
 .businesses .row-logo-img img{
   position: absolute;
-  width: 50%;
+  width: 115px;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
@@ -463,8 +462,8 @@ main{
 }
 .business-bottom p{
   font-weight: 600;
-
   line-height: 30px;
+  margin-bottom: 20px;
 }
 .business-bottom .small{
   margin-top: 40px;
@@ -482,6 +481,9 @@ main{
    height: 500px;
    width: 100%;
    background-color:#32495B ;
+ }
+ footer .footer-content a:hover{
+   color: orange;
  }
  footer .footer-content{
    padding-top: 40px;
@@ -525,6 +527,9 @@ footer ul li .btn a{
 footer i{
   color: #BAC7D4;
   margin-right: 20px;
+}
+footer i:hover{
+  color: orange;
 }
 
 .footer-languages{
