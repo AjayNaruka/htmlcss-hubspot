@@ -44,13 +44,69 @@ body{
 .c-align{
   text-align: center;
 }
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
 
 /* --------------------- */
 
 header{
   height: 868px;
 }
+/*FIXED BAR*/
+
+.fixed-bar{
+  position: fixed;
+  top:0;
+  width: 100%;
+  height: 65px;
+  background-color:#F4F9FD ;
+  line-height: 65px;
+  border-bottom: 1px solid;
+  font-size: 20px;
+  z-index: 999;
+}
+.fixed-bar .bar-right{
+  float: right;
+  width: 50%;
+  text-align: right;
+  
+}
+.fixed-bar .bar-right a{
+  color: #2EB4C9;
+}
+.fixed-bar li{
+  display: inline;
+}
+.fixed-bar .bar-right ul li{
+  display: inline;
+  padding-right:20px ;
+}
+.bar-right ul li:last-child{
+  padding-right: 0px;
+}
+.fixed-bar .bar-left ul li:first-child{
+  padding-right: 25px;
+  border-right: 3px solid gray;
+  margin-right: 20px;
+}
+.fixed-bar .btn{
+  height: 50px;
+  line-height: 50px;
+  padding: 0% 2%;
+}
+.btn.login{
+  background: white;
+  color:orange;
+  border: 1px solid orange;
+}
+
+
 .logo-nav{
+  margin-top: 65px;
   height: 65px;
   background-color: red;
 }
@@ -133,8 +189,9 @@ main{
 }
 
 .btn{
+  display: inline-block;
   background-color: #FE795C;
-  width: fit-content;
+  
   height: 70px;
   line-height: 70px;
   border-radius: 5px;
