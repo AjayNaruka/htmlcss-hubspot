@@ -37,6 +37,13 @@ body{
 .col-logo img{
   width: 40%;
 }
+.b-round{
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.5);
+}
+.c-align{
+  text-align: center;
+}
 
 /* --------------------- */
 
@@ -88,6 +95,9 @@ header{
 .logo-nav .nav ul li span{
   margin-left: 10px;
 }
+main{
+  background-color: #F4F9FD;
+}
 
 
 /* BANNER */
@@ -125,16 +135,15 @@ header{
 .btn{
   background-color: #FE795C;
   width: fit-content;
-  height: 50px;
-  line-height: 50px;
+  height: 70px;
+  line-height: 70px;
   border-radius: 5px;
-  padding: 0% 4%;
+  padding:0% 3%;
 }
 
 .btn a{
   display: inline-block;
   width: 100%;
-  height: 100%;
   text-decoration: none;
   color: white;
 }
@@ -236,23 +245,28 @@ header{
 }
 .hubs{
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .col-3{
   width: 30%;
   background-color: yellow;
-  margin-right: 1%;
+  
 }
 .col-container{
   width: 90%;
   margin: auto;
 }
-
+.hubs .col-logo{
+  height: 150px;
+}
 .hubs .col-logo img{
-  width: 30%;
+  margin-top: 5%;
+  height: 80%;
 }
 .hubs .col-description{
   position: relative;
+  height: 170px; /* PER ALLINEARE LA LINEA IN BASSO */
   padding: 0% 6%;
   line-height: 30px;
   margin-top: 20px;
@@ -271,12 +285,146 @@ header{
 }
 .col-bottom h4{
   margin-top: 30px;
+  margin-bottom: 20px;
 }
 .col-bottom ul{
   text-align: left;
   list-style: none;
+  line-height: 30px;
+}
+.hubs .sales{
+  margin: 0 5%;
+}
+.hubs .btn{
+  margin-left: 50%;
+  transform: translate(-50%,0);
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.hubs ul span{
+  margin-right: 10px;
+}
+
+/* AWARDS */
+.awards{
+  background-image: linear-gradient(to right, #00A8B9 , aquamarine);
+  width: 100%;
+  color: white;
+  padding-bottom: 100px;
+}
+.awards .section-title{
+  text-align: center;
+  font-size: 25px;
+  padding:2% 0%
+}
+.awards p{
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+.awards .awards-table .row{
+  border-bottom: 1px solid white;
+}
+.awards .awards-table .row:last-child{
+  border-bottom: none;
+}
+
+
+.table-item{
+  width: 25%;
+  border-right: 1px solid white;
+  padding: 1% 3%;
+}
+.table-item:last-child{
+  border-right: none;
+}
+.awards .row .item-number{
+  margin: 30px 0;
+  font-size: 50px;
+  font-weight: 600;
+}
+.awards .row .item-number span{
+  font-size: 35px;
+  font-weight: 500;
+}
+.awards .table-item .item-img img{
+  height: 50px;
+}
+
+/*BUSINESSES */
+.businesses{
+  color: #33475B;
+}
+.businesses .business-content{
+  padding: 2% 0%;
+}
+.businesses .business-description{
+  width: 30%;
+  padding: 0% 8%
+}
+.businesses .business-description .number{
+  margin-top: 50px;
+  font-size: 50px;
+  font-weight: 700;
+}
+.businesses .business-description p{
+  margin-top: 30px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.businesses .business-logo{
+  width: 70%;
+  height: 200px;
+  padding: 3%;
+  margin-top: 50px;
+}
+.businesses .row-logo{
+  height: 50%;
+}
+.businesses .row-logo-img{
+  position: relative;
+  width: 25%;
+  height: 100%;
+}
+.businesses .row-logo-img img{
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.business-bottom{
+  position: relative;
+  margin-top: 60px;
+}
+.business-bottom .bottom-text{
+  width: 30%;
+}
+
+.bottom-title{
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+.business-bottom p{
+  font-weight: 600;
 
   line-height: 30px;
 }
+.business-bottom .small{
+  margin-top: 40px;
+  font-weight: 400;
+}
+.businesses .business-bottom img{
+  position:absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+/*FOOTER*/
+ footer{
+   height: 500px;
+   width: 100%;
+   background-color:#32495B ;
+ }
+
 
 
