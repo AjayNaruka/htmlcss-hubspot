@@ -66,12 +66,67 @@ a{
 ul{
   list-style: none;
 }
+.fw-600{
+  font-weight: 600;
+}
 
 /* --------------------- */
-
-header{
-  
+.hoverable{
+  display: inline-block;
 }
+/*HOVER*/
+.hover-content{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background: red;
+}
+.hoverable:hover .hover-content{
+  display: block;
+}
+.hover-content.language{
+  left: 270px;
+  background: blue;
+}
+.hover-content.software{
+  right: 668px;
+  background: red;
+}
+.hover-content.resources{
+  right: 450px;
+  background: green;
+}
+
+.resources-row{
+  position: relative;
+  width: 800px;
+  margin-bottom: 2px solid red;
+}
+
+.resources-row-cell{
+  margin-left: 0px;
+  width: 25%;
+  text-align: left;
+}
+.resources-row-cell .resources-text{
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.hover-content.partners{
+  right: 330px;
+  background: yellow;
+}
+.hover-content.about{
+  right: 230px;
+  background: blueviolet;
+}
+
+.about-col{
+  margin-right: 20px;
+}
+
+
+
 /*FIXED BAR*/
 
 .fixed-bar{
@@ -159,6 +214,9 @@ header{
 
 .logo-nav .nav ul li span{
   margin-left: 10px;
+}
+.logo-nav .nav .about-col-list ul li{
+  display: block;
 }
 main{
   background-color:#F4F9FD;
@@ -468,9 +526,62 @@ main{
   top: 0;
   height: 100%;
 }
+/*CHAT BOT*/
+.bott{
+  position: absolute;
+  right: 0;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+.chat-box{
+  position: relative;
+  width: 200px;
+  padding: 20px 0;
+}
 
+.chat-text{
+  position: relative;
+  background-color: white;
+  margin: auto;
+  padding: 0 15px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.x{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-top: 5px;
+  padding-right: 5px;
+}
+.bot img{
+  position: absolute;
+  width: 50px;
+  z-index: 99;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.bubble{
+  position: relative;
+  background-color: #425D79;
+  height: 60px;
+  width: 60px;
+  line-height: 50px;
+  border-radius: 50%;
+  margin-left: auto;
+  box-shadow: 2px 2px 10px black;
+}
+.bubble img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
 /*FOOTER*/
  footer{
+   position: relative;
    height: 500px;
    width: 100%;
    background-color:#32495B ;
@@ -517,7 +628,7 @@ footer ul li .btn a{
   text-decoration: none;
   color: #33475B;
 }
-footer i{
+footer .footer-content i{
   color: #BAC7D4;
   margin-right: 20px;
 }

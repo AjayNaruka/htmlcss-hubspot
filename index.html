@@ -12,12 +12,19 @@
 </head>
 <body>
   <header>
+    
     <!-- FIXED NAV BAR -->
     <div class="fixed-bar min-width">
       <div class="bar-content width clearfix">
         <div class="bar-left float-left">
           <ul>
-            <li><span><i class="fas fa-globe-europe"></i></span><a href="#">English</a><span><i class="fas fa-angle-down"></i></span></li>
+            <li>
+              <div class="hoverable">
+                <span><i class="fas fa-globe-europe"></i></span><a href="#">English</a><span><i class="fas fa-angle-down"></i></span>
+                <div class="hover-content language">
+                </div>
+              </div>
+            </li>
             <li><a href="#">Contact Us</a></li>
           </ul>
         </div>
@@ -37,14 +44,131 @@
       </div>
       <div class="nav float-left">
         <ul>
-          <li><a href="#">software <span><i class="fas fa-angle-down"></i></span></a></li>
+          <li>
+            <div class="hoverable">
+              <a href="#">software <span><i class="fas fa-angle-down"></i></span></a>
+              <div class="hover-content software">
+                <ul>
+                  
+                </ul>
+              </div>
+            </div>
+          </li>
           <li><a href="#">pricing </a></li>
           <li>
-            <a href="#">resources <span><i class="fas fa-angle-down"></i></span></a>
+            <div class="hoverable">
+              <a href="#">resources <span><i class="fas fa-angle-down"></i></span></a>
+              <div class="hover-content resources">
+                <div class="resources-row clearfix">
+                  <div class="resources-row-cell float-left">
+                    <div class="hover-col-title fw-600">
+                      Blog
+                    </div>
+                    <div class="resources-text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, doloremque?
+                    </div>
+                  </div>
+                  <div class="resources-row-cell float-left">
+                    <div class="hover-col-title fw-600">
+                      Blog
+                    </div>
+                    <div class="resources-text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, doloremque?
+                    </div>
+                </div>
+                <div class="resources-row-cell float-left">
+                  <div class="hover-col-title fw-600">
+                    Blog
+                  </div>
+                  <div class="resources-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, doloremque?
+                  </div>
+                </div>
+                
+              </div>
+              <div class="resources-row clearfix">
+                <div class="resources-row-cell float-left">
+                  <div class="hover-col-title fw-600">
+                    Blog
+                  </div>
+                  <div class="resources-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, doloremque?
+                  </div>
+                </div>
+                <div class="resources-row-cell float-left">
+                  <div class="hover-col-title fw-600">
+                    Blog
+                  </div>
+                  <div class="resources-text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, doloremque?
+                  </div>
+              </div>
+              <div class="resources-row-cell float-left">
+                <div class="hover-col-title fw-600">
+                  Blog
+                </div>
+                <div class="resources-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, doloremque?
+                </div>
+              </div>
+              
+            </div>
+            </div>
           </li>
-          <li><a href="#">partners <span><i class="fas fa-angle-down"></i></span></a>
+          <li>
+            <div class="hoverable">
+              <a href="#">partners <span><i class="fas fa-angle-down"></i></span></a>
+              <div class="hover-content partners"></div>
+            </div>
           </li>
-          <li><a href="#">about <span><i class="fas fa-angle-down"></i></span></a></li>
+          <li>
+            <div class="hoverable">
+              <a href="#">about <span><i class="fas fa-angle-down"></i></span></a>
+              <div class="hover-content about">
+                <div class="about-container clearfix">
+                  <div class="about-col float-left">
+                    <div class="hover-col-title fw-600">
+                      Company
+                    </div>
+                    <div class="about-col-list">
+                      <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="about-col float-left">
+                    <div class="about-col-title fw-600">
+                      Company
+                    </div>
+                    <div class="about-col-list">
+                      <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="about-col float-left">
+                    <div class="about-col-title fw-600">
+                      Company
+                    </div>
+                    <div class="about-col-list">
+                      <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
@@ -338,6 +462,31 @@
     </section>
   </main>
   <footer class="min-width">
+    <!-- CHAT BOT -->
+    <div class="bott">
+      <div class="chat-box">
+        <div class="sec">
+          <div class="bot">
+            <img src="assets/img/bot-avatar.jpg" alt="">
+          </div>
+          <div class="container">
+            <div class="chat-text">
+              <div class="x">
+                <a href=""><i class="far fa-times-circle"></i></a>
+              </div>
+              <div class="text">
+                <p>Want to chat about HubSpot?
+                  I'm here to help you find your way
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bubble">
+          <img src="assets/img/launcher-open-icon.svg" alt="">
+        </div>
+      </div>
+    </div>
     <div class="footer-content width">
       <!-- 4 FLOATS -->
       <div class="top-footer clearfix">
