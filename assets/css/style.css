@@ -44,6 +44,21 @@ body{
 .c-align{
   text-align: center;
 }
+.btn{
+  display: inline-block;
+  background-color: #FE795C;
+  
+  height: 70px;
+  line-height: 70px;
+  border-radius: 5px;
+  padding:0% 3%;
+}
+
+.btn a{
+  display: inline-block;
+  width: 100%;
+  color: white;
+}
 a{
   text-decoration: none;
 }
@@ -54,7 +69,7 @@ ul{
 /* --------------------- */
 
 header{
-  height: 868px;
+  
 }
 /*FIXED BAR*/
 
@@ -65,8 +80,7 @@ header{
   height: 65px;
   background-color:#F4F9FD ;
   line-height: 65px;
-  border-bottom: 1px solid;
-  font-size: 20px;
+  border-bottom: 1px solid black;  
   z-index: 999;
 }
 .fixed-bar .bar-right{
@@ -75,7 +89,7 @@ header{
   text-align: right;
   
 }
-.fixed-bar .bar-right a{
+.fixed-bar .bar-right li:first-child a{
   color: #2EB4C9;
 }
 .fixed-bar li{
@@ -98,13 +112,15 @@ header{
   line-height: 40px;
   padding: 0% 2%;
 }
-.btn.login{
+.fixed-bar .btn.login{
   background: white;
-  color:orange;
   border: 1px solid orange;
 }
+.fixed-bar .btn.login a{
+  color:orange;
+}
 
-
+/* NAV -BAR */
 .logo-nav{
   margin-top: 65px;
   height: 65px;
@@ -125,9 +141,7 @@ header{
 }
 .logo-nav .nav{
   width: 50%;
-  height: 65px;
   line-height: 65px;
-
   text-align: right;
 }
 
@@ -141,17 +155,13 @@ header{
   color: #33475B;
   font-weight: 600;
 }
-/* .logo-nav .nav ul li a::after{
-  font-family: 'Font Awesome 5';
-  content: '<i class="fas fa-angle-down"></i>';
-  margin-left: 10px;
-} */
 
 .logo-nav .nav ul li span{
   margin-left: 10px;
 }
 main{
   background-color: #F4F9FD;
+  color: #33475B;
 }
 
 
@@ -187,25 +197,11 @@ main{
   font-size: 75%;
 }
 
-.btn{
-  display: inline-block;
-  background-color: #FE795C;
-  
-  height: 70px;
-  line-height: 70px;
-  border-radius: 5px;
-  padding:0% 3%;
-}
 
-.btn a{
-  display: inline-block;
-  width: 100%;
-  text-decoration: none;
-  color: white;
-}
+
 
 .divisore{
-  height: 65px;
+  height: 95px;
   width: 100%;
   background-color: aquamarine;
   border-bottom: 5px solid black;
@@ -214,7 +210,6 @@ main{
 /* CUBES SECTION */
 
 .cubes{
-  margin-top: 65px;
   padding-top: 40px;
   text-align: center;
 }
@@ -230,7 +225,7 @@ main{
   
 }
 .cube-header-text h2{
-  color: #33475B;
+  font-size: 30px;
 }
 .cube-header-text p{
   line-height: 30px;
@@ -246,17 +241,17 @@ main{
 .book{
   width: 30%;
 }
-
-.book .btn{
-  margin: 20px 0;
+.book img{
+  margin-bottom: 20px;
 }
+
 .feature{
   width:70%;
   text-align:left;  
 }
 
 .titles{
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 800;
 }
 
@@ -321,11 +316,10 @@ main{
 }
 .hubs .col-description{
   position: relative;
-  height: 170px; /* PER ALLINEARE LA LINEA IN BASSO */
+  height: 180px; /* PER ALLINEARE LA LINEA IN BASSO */
   padding: 0% 6%;
   line-height: 30px;
   margin-top: 20px;
-  padding-bottom: 70px;
 }
 .hubs .col-description::after{
   background-color: gray;
@@ -393,12 +387,16 @@ main{
 }
 .awards .row .item-number{
   margin: 30px 0;
-  font-size: 50px;
+  font-size: 250%;
   font-weight: 600;
 }
-.awards .row .item-number span{
-  font-size: 35px;
-  font-weight: 500;
+.awards .row .item-number h2::after{
+  display: inline-block;
+  content: '+';
+  font-size: 50%;
+  font-weight: 600;
+  vertical-align: 25%;
+  margin-left: 5px;
 }
 .awards .table-item .item-img img{
   height: 50px;
@@ -425,28 +423,23 @@ main{
   line-height: 30px;
   margin-bottom: 30px;
 }
-.businesses .business-logo{
-  width: 70%;
-  height: 200px;
-  padding-left:25%;
-  margin-top: 50px;
+.sponsors{
+  width: 60%;
+  padding-top: 50px;
 }
-.businesses .row-logo{
-  height: 50%;
-  
+.sponsors .sponsor-row{
+  width: 100%;
+  vertical-align: middle;
 }
-.businesses .row-logo-img{
-  position: relative;
-  width: 15%;
-  height: 100%;
-  margin-right: 10%;
+.sponsors .sponsor-row-image{
+  width: 25%;
+  height: 100px;
+  line-height: 100px;
+  padding-right: 50px;
 }
-.businesses .row-logo-img img{
-  position: absolute;
-  width: 115px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+.sponsors .sponsor-row-image img{
+  width: 100%;
+  vertical-align: middle;
 }
 .business-bottom{
   position: relative;
