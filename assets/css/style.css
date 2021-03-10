@@ -76,53 +76,34 @@ ul{
 }
 /*HOVER*/
 .hover-content{
+  position: relative;
   display: none;
   position: absolute;
   z-index: 1;
-  background: red;
+  background: white;
+  padding: 20px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  text-align: left;
+}
+.hover-content:after{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid gray;
+  border-bottom: 0px solid gray;
+  border-left: 2px solid gray;
+  border-right: 0px solid gray;
+  top: -0.6%;
+  left: 0%;
+  margin-left: -10px;
+  content: '';
+  transform: rotate(45deg);
+  margin-top: -10px;
+  background-color: white;
 }
 .hoverable:hover .hover-content{
   display: block;
-}
-.hover-content.language{
-  left: 270px;
-  background: blue;
-}
-.hover-content.software{
-  right: 668px;
-  background: red;
-}
-.hover-content.resources{
-  right: 450px;
-  background: green;
-}
-
-.resources-row{
-  position: relative;
-  width: 800px;
-  margin-bottom: 2px solid red;
-}
-
-.resources-row-cell{
-  margin-left: 0px;
-  width: 25%;
-  text-align: left;
-}
-.resources-row-cell .resources-text{
-  line-height: 20px;
-  margin-bottom: 10px;
-}
-.hover-content.partners{
-  right: 330px;
-  background: yellow;
-}
-.hover-content.about{
-  right: 230px;
-  background: blueviolet;
-}
-
-.about-col{
-  margin-right: 20px;
 }
 
 
@@ -221,6 +202,82 @@ ul{
 main{
   background-color:#F4F9FD;
   color: #33475B;
+}
+/*SINGOLI HOVER*/
+
+/*LANGUAGES */
+.hover-content.language{
+  width: 150px;
+  left: 190px;
+  top: 70px;
+}
+.hover-content.language::after{
+  left: 80%;
+}
+.hover-content.language ul li{
+  padding: 0px;
+}
+.hover-content.language ul li:first-child{
+  border: 0px;
+}
+/*RESOURCES*/
+.hover-content.resources{
+  right: 450px;
+}
+.hover-content.resources::after{
+  left: 95%;
+}
+
+.resources-row{
+  position: relative;
+  width: 800px;
+  margin-bottom: 2px solid red;
+}
+
+.resources-row-cell{
+  margin-left: 0px;
+  width: 33%;
+  text-align: left;
+}
+.resources-row-cell .resources-text{
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+/*ABOUT */
+.hover-content.about{
+  right: 230px;
+}
+.hover-content.about ul li a{
+  font-weight: 400;
+}
+
+.about-col{
+  margin-right: 20px;
+}
+.hover-content.about::after{
+  left: 95%;
+}
+
+/*PARTNERS*/
+
+.hover-content.partners{
+  right: 330px;
+
+}
+ .hover-content.partners{
+   width: 800px;
+   line-height: 20px;
+   text-align: left;
+ }
+.partner-col{
+  width: 45%;
+  margin-right: 3%;
+}
+.partner-col .partner-text{
+  margin-top: 10px;
+}
+.hover-content.partners::after{
+  left: 95%;
 }
 
 
